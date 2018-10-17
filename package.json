@@ -1,0 +1,25 @@
+{
+  "name": "lambdadon",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for Mastodon integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kb10uy/lambdadon.git"
+  },
+  "author": "kb10uy <kb10uy@kb10uy.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kb10uy/lambdadon/issues"
+  },
+  "homepage": "https://github.com/kb10uy/lambdadon#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.3"
+  }
+}
