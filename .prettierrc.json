@@ -5,5 +5,14 @@
     "semi": true,
     "singleQuote": true,
     "trailingComma": "all",
-    "useTabs": false
+    "useTabs": false,
+
+    "overrides": [
+        {
+            "files": "*.ts",
+            "options": {
+                "tabWidth": 4
+            }
+        }
+    ]
 }
