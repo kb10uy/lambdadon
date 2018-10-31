@@ -9,4 +9,4 @@ cp package.json dist
 cd dist
 npm install --only=production
 rm -f package.json package-lock.json
-zip -R ../dist.zip *
+zip -R ../dist.zip "./*"
