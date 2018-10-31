@@ -7,6 +7,6 @@ npx tsc -P ./tsconfig.json
 echo "Installing dependencies..."
 cp package.json dist
 cd dist
-rm -f ./package.json ./package-lock.json
 npm install --only=production
+rm -f ./package.json ./package-lock.json
 zip -R "../dist.zip" "./**/*"
