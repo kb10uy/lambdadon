@@ -1,5 +1,5 @@
 #!/bin/sh
-rm -rf dist
+rm -rf dist dist.zip
 
 echo "Building TypeScript sources..."
 npx tsc -P ./tsconfig.json
@@ -8,5 +8,5 @@ echo "Installing dependencies..."
 cp package.json dist
 cd dist
 npm install --only=production
-rm -f ./package.json ./package-lock.json
-zip -R "../dist.zip" "./**/*"
+rm -f package.json package-lock.json
+zip -R ../dist.zip *
