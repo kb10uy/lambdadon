@@ -6,7 +6,7 @@ import * as awsAction from './aws-action';
 const githubSecret = process.env.GITHUB_SECRET || '';
 const actionType = process.env.ACTION_TYPE || 'MASTODON_TOOT';
 
-export async function handle(event: APIGatewayProxyEvent) {
+export async function handler(event: APIGatewayProxyEvent) {
     if (!validateGitHubRequestBody(githubSecret, event)) {
         throw new Error('SHA1 digest did not match');
     }
